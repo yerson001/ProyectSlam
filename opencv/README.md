@@ -39,14 +39,16 @@ $ sudo -s
 $ cd /opt
 $ opt/ git clone https://github.com/opencv/opencv.git
 $ opt/ git clone https://github.com/opencv/opencv_contrib.git
-
-en opencv
+~~~
+### EN OPENCV --> elegi versión
+~~~
+$/opt/ cd opencv
 $ git chekcout 4.4.0  # cualquier version que quieras de opencv
-/opt/opencv$ mkdir release
+$/opt/opencv$ mkdir release
 
-/opt/opencv$ cd release
+$/opt/opencv$ cd release
 
-/opt/opencv/release$ cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv
+$/opt/opencv/release$ cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv
 ~~~
 ### Error linea 11 -> solo si lo tiene
 ~~~
